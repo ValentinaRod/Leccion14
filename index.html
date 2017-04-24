@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Datos</title>
+	<script type="text/javascript" src="assets/js/javascript.js"></script>	
+</head>
+<body>
+<!--Realizamos el pedido de los datos-->
+<!--<p align="center"> nos centra la linea-->
+
+<p align="center">Nombre: <p align="center"><input type="text" required pattern="\w+" name="username"></p>
+<p align="center">Apellido: <p align="center"><input type="text" required pattern="\w+" name="username"></p>
+
+<p align="center">Email: <p align="center"><input type="email" name="email" required placeholder="Coloca un Email Valido">
+
+  <!--esto nos permite crear el dopdrown-->
+<form action="/action_page.php">
+  <p align="center">Seleccione su gusto musical <p align="center"><select name="cars">
+    <option value="Rock">Rock</option>
+    <option value="Metal">Metal</option>
+    <option value="Electronica">Electronica</option>
+    <option value="Clasica">Clasica</option>
+  </select>
+  <p align="center"><input type="Submit" value="Enviar">
+</form>
+
+<p align="center">Password: <p align="center"><input id="field_pwd1" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1"></p>
+
+<p align="center">Confirm Password: <p align="center"><input id="field_pwd2" title="Please enter the same Password as above." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2"></p>
+<p align="center"><input type="submit" value="Enviar"></p>
+
+
+
+</form>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+</body>
+</html>
